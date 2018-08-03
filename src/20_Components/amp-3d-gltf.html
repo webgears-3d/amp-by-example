@@ -28,7 +28,9 @@
   <amp-3d-gltf layout="fixed"
                width="320"
                height="240"
-               src="/glTF/DamagedHelmet.glb"></amp-3d-gltf>
+               src="/glTF/shoe.glb"></amp-3d-gltf>
+
+
   <!-- ## Attributes -->
   <!--
     This section covers how you can customize the viewer for your needs.
@@ -39,14 +41,28 @@
     * `autoRotate` - A Boolean attribute that specifies whether to automatically rotate the camera around the model's center. Default value is `false`.
     * `enableZoom` - A Boolean attribute that specifies whether to turn on zoom. Default value is `true`.
   -->
-  <amp-3d-gltf layout="fixed"
-               width="320"
+  <!--
+    autoRotate attribute makes model to rotate smoothly unless user interact with it
+  -->
+  <amp-3d-gltf layout="responsive"
+               width="300"
                height="240"
                alpha="true"
                antialiasing="true"
                autoRotate="true"
                enableZoom="false"
-               src="/glTF/DamagedHelmet.glb"></amp-3d-gltf>
+               src="/glTF/flat.glb"></amp-3d-gltf>
+
+  <!--
+    enableZoom attribute allows to restrict zooming action
+  -->
+  <amp-3d-gltf layout="responsive"
+               width="320"
+               height="240"
+               alpha="true"
+               antialiasing="true"
+               enableZoom="false"
+               src="/glTF/chassis.glb"></amp-3d-gltf>
 
 </body>
 </html>
